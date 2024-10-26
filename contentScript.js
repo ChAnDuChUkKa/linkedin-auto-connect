@@ -2,12 +2,12 @@
     const connectButtons = Array.from(document.querySelectorAll('button.artdeco-button--secondary'))
                                 .filter(button => button.innerText.trim() === "Connect");
   
-    function updateProgress(count) {
-      const progressCircle = document.getElementById("progressCircle");
-      if (progressCircle) {
-        progressCircle.innerText = count;
-      }
-    }
+    // function updateProgress(count) {
+    //   const progressCircle = document.getElementById("progressCircle");
+    //   if (progressCircle) {
+    //     progressCircle.innerText = count;
+    //   }
+    // }
   
     function sendConnectionRequest(index) {
       if (index >= connectButtons.length) return;
@@ -27,7 +27,7 @@
             if (closeButton) closeButton.click();
           }
   
-          updateProgress(index + 1);
+        //   updateProgress(index + 1);
   
           setTimeout(() => {
             sendConnectionRequest(index + 1);
