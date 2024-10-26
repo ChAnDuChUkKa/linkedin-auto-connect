@@ -1,0 +1,59 @@
+/* General styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    outline: none;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f4f6;
+    color: #333;
+    outline: none;
+  }
+
+  /* Card container */
+  .container {
+    width: 200px;
+    height: 100%;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+  }
+
+  /* Header */
+  h2 {
+    color: #0073b1;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  /* Connect button */
+  #connectButton {
+    background-color: #0073b1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+
+  #connectButton:hover {
+    background-color: #005582;
+  }
+
+  /* Status message */
+  #status, #noOfConnections {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #555;
+  }
